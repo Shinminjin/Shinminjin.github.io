@@ -20,25 +20,24 @@
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   />
 
-  {%- capture seo_tags -%} {% seo title=false %} {%- endcapture -%}
+  {% capture seo_tags %} {% seo title=false %} {% endcapture %}
 
   <!-- Setup Open Graph image -->
 
   {% if page.image %} {% assign src = page.image.path | default: page.image %}
-  {% unless src contains '://' %} {%- capture img_url -%} {% include
-  img-url.html src=src img_path=page.img_path absolute=true %} {%- endcapture
-  -%} {%- capture old_url -%}{{ src | absolute_url }}{%- endcapture -%} {%-
-  capture new_url -%}{{ img_url }}{%- endcapture -%} {% assign seo_tags =
-  seo_tags | replace: old_url, new_url %} {% endunless %} {% elsif
-  site.social_preview_image %} {%- capture img_url -%} {% include img-url.html
-  src=site.social_preview_image absolute=true %} {%- endcapture -%} {%- capture
-  og_image -%}
+  {% unless src contains '://' %} {% capture img_url %} {% include img-url.html
+  src=src img_path=page.img_path absolute=true %} {% endcapture %} {% capture
+  old_url %}{{ src | absolute_url }}{% endcapture %} {% capture new_url %}{{
+  img_url }}{% endcapture %} {% assign seo_tags = seo_tags | replace: old_url,
+  new_url %} {% endunless %} {% elsif site.social_preview_image %}{% capture
+  img_url %} {% include img-url.html src=site.social_preview_image absolute=true
+  %} {% endcapture %} {% capture og_image %}
   <meta property="og:image" content="{{ img_url }}" />
-  {%- endcapture -%} {% endif %} {{ seo_tags }}
+  {% endcapture %} {% endif %} {{ seo_tags }}
 
   <title>
-    {%- unless page.layout == 'home' -%} {{ page.title | append: ' | ' }} {%-
-    endunless -%} {{ site.title }}
+    {% unless page.layout == 'home' %} {{ page.title | append: ' | ' }} {%
+    endunless %} {{ site.title }}
   </title>
 
   {% include_cached favicons.html %} {% if site.resources.ignore_env !=
