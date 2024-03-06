@@ -170,7 +170,7 @@ defaults:
     values:
       comments: false
   - scope:
-      path: "assets/img/profile.jpg"
+      path: ""
       type: tabs # see `site.collections`
     values:
       layout: page
