@@ -6,7 +6,7 @@
       {%- if site.avatar != empty and site.avatar -%}
         {% capture avatar_url %}
           {% include img-url.html src=site.avatar %}
-        {%- endcapture -%}
+        {% endcapture %}
         <img src="{{ avatar_url }}" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
       {%- endif -%}
     </a>
@@ -64,6 +64,8 @@
           {%- capture url -%}
             javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
           {%- endcapture -%}
+        {% when 'rss' %}
+          {% assign url = '/feed.xml' | relative_url %}
         {% else %}
           {% assign url = entry.url %}
       {% endcase %}
