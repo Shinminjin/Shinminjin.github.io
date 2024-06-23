@@ -114,7 +114,7 @@ blockquote {
 }
 
 kbd {
-  font-family: inherit;
+  font-family: 'Gowun Dodum';
   display: inline-block;
   vertical-align: middle;
   line-height: 1.3rem;
@@ -197,7 +197,7 @@ i {
 #panel-wrapper {
   /* the headings */
   .panel-heading {
-    font-family: inherit;
+    font-family: 'Gowun Dodum';
     line-height: inherit;
 
     @include label(inherit);
@@ -754,7 +754,7 @@ $btn-mb: 0.5rem;
   }
 
   .site-title {
-    font-family: inherit;
+    font-family: 'Gowun Dodum';
     font-weight: 900;
     font-size: 1.75rem;
     line-height: 1.2;
@@ -1102,7 +1102,7 @@ search {
   display: none;
   font-size: 1.1rem;
   font-weight: 600;
-  font-family: sans-serif;
+  font-family: 'Gowun Dodum';
   color: var(--topbar-text-color);
   text-align: center;
   width: 70%;
@@ -1202,7 +1202,7 @@ search {
   }
 
   .toast-body {
-    font-family: Lato, sans-serif;
+    font-family: 'Gowun Dodum', sans-serif;
     line-height: 1.25rem;
 
     button {
