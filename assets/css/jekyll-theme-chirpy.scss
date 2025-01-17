@@ -1,5 +1,11 @@
 ---
 ---
 
-@import 'main';
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap'); /* append your custom style below */
+@use 'main
+{%- if jekyll.environment == ' production ' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
