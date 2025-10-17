@@ -5,8 +5,7 @@ categories: [Cilium]
 tags: [Cilium]
 ---
 
-> **서문**
-> 본 문서는 Cloudbro 오픈 프로젝트 **“Cilium 기반 멀티클러스터 Zero-Trust & Observability 아키텍처 설계”**에 직접 참여하여 수행한 설계·검증 결과를 바탕으로 재구성한 실습 가이드입니다. 전체 아키텍처, 소스 코드, GKE 멀티클러스터 구축 가이드, 본 랩의 워크로드·매니페스트는 레포지토리에서 확인하실 수 있습니다: [cloudbro-draupnir/draupnir](https://github.com/cloudbro-draupnir/draupnir)
+> 본 문서는 Cloudbro 오픈 프로젝트 **“Cilium 기반 멀티클러스터 Zero-Trust & Observability 아키텍처 설계”**에 직접 참여하여 수행한 설계·검증 결과를 바탕으로 재구성한 실습 가이드입니다. 전체 아키텍처, 소스 코드, GKE 멀티클러스터 구축 가이드, 본 랩의 워크로드·매니페스트는 [레포지토리](https://github.com/cloudbro-draupnir/draupnir)에서 확인하실 수 있습니다.
 > 
 > **진행 순서 안내**
 > 1. 먼저 상기 레포지토리의 **README**를 확인하시기 바랍니다. 
